@@ -1,14 +1,22 @@
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const bodyParser = require("body-parser");
+<<<<<<< HEAD
 const path = require("path");  
+=======
+const path = require("path"); 
+>>>>>>> 0929f3fed5e6d847ca65d093441b1d0cfd002acf
 
 const app = express();
 const PORT = 3000;
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: true }));
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, "public")));  
+=======
+app.use(express.static(path.join(__dirname, "public"))); 
+>>>>>>> 0929f3fed5e6d847ca65d093441b1d0cfd002acf
 
 // database
 const db = new sqlite3.Database("database.db");
